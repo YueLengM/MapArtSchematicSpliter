@@ -84,7 +84,7 @@ max_height = [0 for _ in range(split_size)]
 for i, area in enumerate(chunks):
     if i % split_col == 0:
         # Maps on the first row hava a additional layer to draw shadow on the first line of pixel.
-        area['size'] = [128 + 1, 0, 128]
+        area['size'] = [128, 0, 128 + 1]
     else:
         area['size'] = [128, 0, 128]
 
