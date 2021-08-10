@@ -120,7 +120,7 @@ for b in data['blocks']:
 for i in range(split_size):
     print('Generating file {} of {}'.format(i + 1, split_size))
     # add other data back
-    chunks[i]['size'][1] = max_height[i]
+    chunks[i]['size'][1] = max_height[i] + 1
     chunks[i]['DataVersion'] = common['DataVersion']
     chunks[i]['author'] = common['author']
     chunks[i]['entities'] = common['entities']
